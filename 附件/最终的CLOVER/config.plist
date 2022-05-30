@@ -262,11 +262,9 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>nv_disable=1 dart=0 kext-dev-mode=1 -lilubetaall -alcbeta</string>
+		<string>dart=0 nv_disable=1 -brcmfx-country=#a -alcbeta -lilubetaall -disablegfxfirmware kext-dev-mode=1</string>
 		<key>DefaultVolume</key>
-		<string>macOS</string>
-		<key>Legacy</key>
-		<string>PBR</string>
+		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -381,6 +379,22 @@
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x5)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,4353</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
+				<key>model</key>
+				<string>DW1820A (BCM4350) 802.11ac Wireless</string>
+				<key>name</key>
+				<string>Airport</string>
+			</dict>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -450,7 +464,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>Hackintosh_ID</string>
+		<string>Catalina</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -814,20 +828,70 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>MLB</key>
+		<string>C02607102QXF9GYCB</string>
+		<key>ROM</key>
+		<data>
+		bi8CgybP
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>BiosReleaseDate</key>
+		<string>06/26/2018</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>MBP133.88Z.0247.B00.1806261159</string>
+		<key>Board-ID</key>
+		<string>Mac-A5C67F76ED83108C</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02607102QXF9GYCB</string>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
+		<key>ChassisAssetTag</key>
+		<string>MacBook-Aluminum</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>0x09</string>
+		<key>Family</key>
+		<string>MacBook Pro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFC0FE13F</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<true/>
+		<key>PlatformFeature</key>
+		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookAir6,2</string>
+		<string>MacBookPro13,3</string>
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir6,2 until Clover has support for Skylake identifiers</string>
+		<key>SerialNumber</key>
+		<string>C02R80Z9GTFN</string>
+		<key>SmUUID</key>
+		<string>B4D4DADE-6623-4337-88EC-961F4C8326CF</string>
 		<key>Trust</key>
 		<true/>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>#BacklightLevel</key>
 		<integer>0</integer>
+		<key>CustomUUID</key>
+		<string>B4D4DADE-6623-4337-88EC-961F4C8326CF</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 	</dict>
